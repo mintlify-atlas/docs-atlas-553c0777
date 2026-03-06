@@ -1,0 +1,103 @@
+{
+  "projectType": "saas",
+  "projectName": "BirdIA",
+  "projectDescription": "AI-powered bird identification platform using audio analysis and geolocation mapping",
+  "theme": "palm",
+  "primaryColor": "#f1d262",
+  "lightColor": "#7c6c34",
+  "darkColor": "#19160b",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Get Started",
+            "pages": [
+              "introduction",
+              "quickstart"
+            ]
+          },
+          {
+            "group": "Core Features",
+            "pages": [
+              "features/audio-analyzer",
+              "features/bird-catalog",
+              "features/prediction-map",
+              "features/user-dashboard"
+            ]
+          },
+          {
+            "group": "Administration",
+            "pages": [
+              "admin/overview",
+              "admin/user-management",
+              "admin/prediction-history"
+            ]
+          },
+          {
+            "group": "Technical",
+            "pages": [
+              "technical/architecture",
+              "technical/authentication",
+              "technical/api-integration",
+              "technical/geolocation"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Components",
+        "groups": [
+          {
+            "group": "UI Components",
+            "pages": [
+              "components/overview",
+              "components/analizador-audio",
+              "components/mapa-predicciones",
+              "components/modal-resultados",
+              "components/navbar-sidebar"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Deployment",
+        "groups": [
+          {
+            "group": "Setup",
+            "pages": [
+              "deployment/installation",
+              "deployment/configuration",
+              "deployment/environment-variables",
+              "deployment/pwa-setup"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Audio recording and upload for bird identification",
+    "AI-powered bird species prediction with confidence scores",
+    "Interactive map showing bird sightings with geolocation",
+    "Comprehensive bird catalog with audio samples",
+    "User and admin dashboards with prediction history",
+    "Progressive Web App (PWA) support for mobile devices",
+    "Role-based access control (admin/user)",
+    "Real-time audio analysis with high-quality recording"
+  ],
+  "publicApiSurface": [
+    "AnalizadorAudio - Audio recording/upload component",
+    "MapaPredicciones - Geolocation-based prediction map",
+    "ModalResultados - Prediction results display",
+    "CatalogoAves - Bird species catalog browser",
+    "Navbar - Navigation component",
+    "Sidebar - Sidebar navigation with role-based menu",
+    "/api/inferencia/analizar - Bird identification endpoint",
+    "/api/inferencia/listar_aves - Bird catalog listing",
+    "/api/inferencia/historial - User prediction history",
+    "/api/admin/logs/historial - Admin view of all predictions",
+    "/api/usuarios/me - Current user information"
+  ]
+}
